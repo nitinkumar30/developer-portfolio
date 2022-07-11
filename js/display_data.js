@@ -1,12 +1,14 @@
 const portfolio_container = document.querySelector('.portfolio-container');
 const portfolio_modals_container = document.querySelector('.portfolio-modals-container');
 const portfolio_filters = document.querySelectorAll('.portfolio-item-filter');
+const skills_container = document.querySelector('.skills-container');
 
 
 //display portfolio items on page load
 document.addEventListener('DOMContentLoaded', () => {
     displayPortfolioItems(PORTFOLIO_DATA);
     displayPortfolioModal(PORTFOLIO_DATA);
+    displaySkills(SKILLS_DATA);
 });
 
 //display all portfolio items
@@ -84,6 +86,35 @@ function displayPortfolioModal(data) {
         </div>
     </div>`;
     });
+}
+
+//Display skills
+function displaySkills(data) {
+    for (let i = 0; i < data.length; i++) {
+        if(i > 3){
+            const col = document.createElement('div');
+            col.classList.add('col-md-6');
+            col.innerHTML += `
+            <div class="progress">
+                <div class="progress-bar" style="width:60%; background: ${data[i].color}">
+                    <h3 class="progress-title">${data[i].title}</h3>
+                    <div class="progress-value">${data[i].percentage}%</div>
+                </div>
+            </div>`;
+            skills_container.appendChild(col);
+        }else{
+            const col = document.createElement('div');
+            col.classList.add('col-md-6');
+            col.innerHTML += `
+                <div class="progress">
+                    <div class="progress-bar" style="width:60%; background: ${data[i].color}">
+                        <h3 class="progress-title">${data[i].title}</h3>
+                        <div class="progress-value">${data[i].percentage}%</div>
+                    </div>
+                </div>`;
+            skills_container.appendChild(col);
+        }
+    }
 }
 
 //open link in new tab

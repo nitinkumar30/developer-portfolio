@@ -167,3 +167,42 @@ const SERVICES_DATA = [
         image: 'assets/service_3.png',
     }
 ];
+
+const SKILLS_DATA = [
+    {
+        id: 1,
+        title: 'HTML',
+        percentage: '95%',
+        color: '#D84924',
+    },
+    {
+        id: 2,
+        title: 'CSS',
+        percentage: '95%',
+        color: '#1D87DC',
+    },
+    {
+        id: 3,
+        title: 'JavaScript',
+        percentage: '90%',
+        color: '#DCA71C',
+    },
+    {
+        id: 4,
+        title: 'PHP',
+        percentage: '90%',
+        color: '#7E10F0',
+    },
+    {
+        id: 5,
+        title: 'MySQL',
+        percentage: '90%',
+        color: '#005C83',
+    },
+    {
+        id: 6,
+        title: 'Java',
+        percentage: '80%',
+        color: '#D62526',
+    },
+];
