@@ -152,19 +152,22 @@ const SERVICES_DATA = [
         id: 1,
         title: 'Web Development',
         description: 'I am a web developer, I can build your website from scratch or I can help you to update your website.',
-        image: 'assets/service_1.png',
+        color: 'bg-primary',
+        image: '<i class="fa-solid fa-code fa-4x"></i>'
     },
     {
         id: 2,
         title: 'Mobile Development',
         description: 'I am a mobile developer, I can build your mobile app from scratch or I can help you to update your mobile app.',
-        image: 'assets/service_2.png',
+        color: 'bg-success',
+        image: '<i class="fa-brands fa-android fa-4x"></i>'
     },
     {
         id: 3,
         title: 'Desktop Development',
         description: 'I am a desktop developer, I can build your desktop app from scratch or I can help you to update your desktop app.',
-        image: 'assets/service_3.png',
+        color: 'bg-danger',
+        image: '<i class="fa-solid fa-laptop fa-4x"></i>'
     }
 ];
 
