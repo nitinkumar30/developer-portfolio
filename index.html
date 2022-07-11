@@ -14,16 +14,19 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-    type="text/css" />
+        type="text/css" />
     <!-- ScrollReveal JS -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    
+
     <!-- TypeWriter JS -->
     <script src="https://unpkg.com/typewriter-effect@2.19.0/dist/core.js"></script>
-    
+
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/skills.css" rel="stylesheet" />
 </head>
 
 <body id="page-top" style="overflow-x: hidden; width: 100%;">
@@ -61,7 +64,8 @@
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-4 my-image" src="assets/img/my_image.png" alt="my image" style="width: 160px;" />
+            <img class="masthead-avatar mb-4 my-image" src="assets/img/my_image.png" alt="my image"
+                style="width: 160px;" />
             <!-- Masthead Heading-->
             <h1 class="text-uppercase mb-0 main-header-title">
                 I'm Abdellatif Laghjaj
@@ -81,14 +85,8 @@
         </div>
 
         <!-- Lottie animation -->
-        <lottie-player 
-            src="assets/raw/scroll-down.json"  
-            background="transparent"
-            speed="1"
-            style="width: 80px; height: 80px; text-align: center; margin: 0 auto;"
-            loop="true"
-            loop="true"
-            loop="true"
+        <lottie-player src="assets/raw/scroll-down.json" background="transparent" speed="1"
+            style="width: 80px; height: 80px; text-align: center; margin: 0 auto;" loop="true" loop="true" loop="true"
             loop autoplay>
         </lottie-player>
     </header>
@@ -110,15 +108,22 @@
             <div class="row">
                 <div class="col-lg-4 ms-auto about-text-1">
                     <p class="lead">
-                        Hello World 👋! I'm <b class="text-primary">Abdellatif Laghjaj</b>, a student in computer science. I've been an enthusiast of programming my whole life. IMHO, programming is like a game of chess with a machine!
-                        I'm interested in <b class="text-primary">web</b> dev, <b class="text-primary">mobile</b> dev, and also <b class="text-primary">desktop</b> dev.
-                        I'm looking forward to <b class="text-primary">learning</b> more about being a <b class="text-primary">full-stack</b> developer! 😃
+                        Hello World 👋! I'm <b class="text-primary">Abdellatif Laghjaj</b>, a student in computer
+                        science. I've been an enthusiast of programming my whole life. IMHO, programming is like a game
+                        of chess with a machine!
+                        I'm interested in <b class="text-primary">web</b> dev, <b class="text-primary">mobile</b> dev,
+                        and also <b class="text-primary">desktop</b> dev.
+                        I'm looking forward to <b class="text-primary">learning</b> more about being a <b
+                            class="text-primary">full-stack</b> developer! 😃
                     </p>
                 </div>
                 <div class="col-lg-4 me-auto about-text-2">
                     <p class="lead">
                         You can find me on <b class="text-primary">GitHub</b> and <b class="text-primary">LinkedIn</b>.
-                        I'm also a <b class="text-primary">freelancer</b> and a <b class="text-primary">student</b> of <b class="text-primary">University of IBN Zohr</b>. You will download my CV by clicking the button below. Biside, if you're interested in a project or you want me to build one, you can contact me <a href="#contact" class="text-primary text-decoration-none">here</a>.
+                        I'm also a <b class="text-primary">freelancer</b> and a <b class="text-primary">student</b> of
+                        <b class="text-primary">University of IBN Zohr</b>. You will download my CV by clicking the
+                        button below. Biside, if you're interested in a project or you want me to build one, you can
+                        contact me <a href="#contact" class="text-primary text-decoration-none">here</a>.
                     </p>
                 </div>
             </div>
@@ -128,6 +133,81 @@
                     Download CV
                     <i class="fa-solid fa-bars-progress ms-2"></i>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section-->
+    <section class="page-section skills" id="skills">
+        <div class="container">
+            <!-- Skills Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <!-- Skills Section Content-->
+            <div class="row">
+                <!-- Skill 1-->
+                <div class="col-md-6">
+                    <h3 class="progress-title">HTML5</h3>
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:50%;">
+                            </div>
+                            <div class="progress-value"><span>3</span>%</div>
+                        </div>
+                    </div>
+                    <h3 class="progress-title">CSS3</h3>
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-info" style="width:75%;">
+                            </div>
+                            <div class="progress-value"><span>4</span>%</div>
+                        </div>
+                    </div>
+                    <h3 class="progress-title">CSS3</h3>
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-info" style="width:75%;">
+                            </div>
+                            <div class="progress-value"><span>4</span>%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 2-->
+                <div class="col-md-6">
+                    <h3 class="progress-title">HTML5</h3>
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-danger" style="width:50%;">
+                            </div>
+                            <div class="progress-value"><span>3</span>%</div>
+                        </div>
+                    </div>
+                    <h3 class="progress-title">CSS3</h3>
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-info" style="width:75%;">
+                            </div>
+                            <div class="progress-value"><span>4</span>%</div>
+                        </div>
+                    </div>
+                    <h3 class="progress-title">CSS3</h3>
+                    <div class="progress-outer">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-info" style="width:75%;">
+                            </div>
+                            <div class="progress-value"><span>4</span>%</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -196,25 +276,26 @@
                     <form id="contactForm" action="https://formspree.io/f/xwkydapk" method="POST">
                         <!-- Name input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name..."
-                                data-sb-validations="required" />
+                            <input class="form-control" id="name" type="text" name="name"
+                                placeholder="Enter your name..." data-sb-validations="required" />
                             <label for="name">Full name</label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
                         <!-- Email address input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
+                            <input class="form-control" id="email" name="email" type="email"
+                                placeholder="name@example.com" data-sb-validations="required,email" />
                             <label for="email">Email address</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                         </div>
                         <!-- Subject input-->
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="subject" name="subject" type="text" placeholder="Build a website..."
-                                data-sb-validations="required" />
+                            <input class="form-control" id="subject" name="subject" type="text"
+                                placeholder="Build a website..." data-sb-validations="required" />
                             <label for="subject">Subject</label>
-                            <div class="invalid-feedback" data-sb-feedback="subject:required">A phone number is required.
+                            <div class="invalid-feedback" data-sb-feedback="subject:required">A phone number is
+                                required.
                             </div>
                         </div>
                         <!-- Message input-->
@@ -290,7 +371,8 @@
     <!-- Copyright Section-->
     <div class="copyright py-4 text-center text-white">
         <div class="container">
-            <small>Copyright &copy; <a href="http://abdellatif-laghjaj.ml" class="text-primary">abdellatif-laghjaj</a> 2022</small>
+            <small>Copyright &copy; <a href="http://abdellatif-laghjaj.ml" class="text-primary">abdellatif-laghjaj</a>
+                2022</small>
         </div>
     </div>
 
