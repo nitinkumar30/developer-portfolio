@@ -2,6 +2,7 @@ const portfolio_container = document.querySelector('.portfolio-container');
 const portfolio_modals_container = document.querySelector('.portfolio-modals-container');
 const portfolio_filters = document.querySelectorAll('.portfolio-item-filter');
 const skills_container = document.querySelector('.skills-container');
+const social_media_container = document.querySelector('.social-media-links');
 
 
 //display portfolio items on page load
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     displayPortfolioItems(PORTFOLIO_DATA);
     displayPortfolioModal(PORTFOLIO_DATA);
     displaySkills(SKILLS_DATA);
+    displaySocialMediaLinks(SOCIAL_MEDIA_LINKS);
 });
 
 //display all portfolio items
@@ -116,6 +118,18 @@ function displaySkills(data) {
         }
     }
 }
+
+//Display social media links
+function displaySocialMediaLinks(data) {
+    data.forEach(item => {
+        social_media_container.innerHTML += `
+            <a class="btn btn-outline-light btn-social mx-1" href="${item.link}" target="_blank">
+                <i class="fab fa-fw ${item.icon}"></i>
+            </a>
+        `;
+    });
+}
+
 
 //open link in new tab
 function openLink(link) {

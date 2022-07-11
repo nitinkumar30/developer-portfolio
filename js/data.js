@@ -206,3 +206,32 @@ const SKILLS_DATA = [
         color: '#D62526',
     },
 ];
+
+
+const SOCIAL_MEDIA_LINKS = [
+    {
+        id: 1,
+        icon: 'fa-linkedin-in',
+        link: 'https://www.linkedin.com/in/abdellatif-laghjaj/',
+    },
+    {
+        id: 2,
+        icon: 'fa-github',
+        link: 'https://github.com/abdellatif-laghjaj',
+    },
+    {
+        id: 3,
+        icon: 'fa-codepen',
+        link: 'https://codepen.io/abdellatif-laghjaj',
+    },
+    {
+        id: 4,
+        icon: 'fa-instagram',
+        link: 'https://www.instagram.com/abdellatif_laghjaj/',
+    },
+    {
+        id: 5,
+        icon: 'fa-facebook',
+        link: 'https://www.facebook.com/abdelatif.laghjaj',
+    }
+];

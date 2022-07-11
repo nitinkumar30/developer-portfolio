@@ -43,26 +43,11 @@ window.addEventListener('DOMContentLoaded', event => {
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
     );
-    
+
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
             if (window.getComputedStyle(navbarToggler).display !== 'none') {
                 navbarToggler.click();
-            }
-        });
-    });
-});
-
-//SKILLS SCRIPTS
-$(document).ready(function(){
-    $('.progress-value > span').each(function(){
-        $(this).prop('Counter',0).animate({
-            Counter: $(this).text()
-        },{
-            duration: 1500,
-            easing: 'swing',
-            step: function (now){
-                $(this).text(Math.ceil(now));
             }
         });
     });
