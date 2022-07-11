@@ -7,6 +7,14 @@ ScrollReveal().reveal('.page-section-heading', {
     easing: "ease-in-out",
 });
 
+//TYPE WRITER
+new Typewriter('.main-header-type-writer span', {
+    strings: ['Student', 'Web Developer', 'Mobile Developer', 'Desktop Developer'],
+    autoStart: true,
+    loop: true,
+    delay: 100,
+});
+
 //FOR HOME
 ScrollReveal().reveal('.my-image', {
     duration: 1300,
