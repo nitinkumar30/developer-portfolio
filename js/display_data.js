@@ -98,7 +98,7 @@ function displaySkills(data) {
             <div class="progress">
                 <div class="progress-bar" style="width:60%; background: ${data[i].color}">
                     <h3 class="progress-title">${data[i].title}</h3>
-                    <div class="progress-value">${data[i].percentage}%</div>
+                    <div class="progress-value">${data[i].percentage}</div>
                 </div>
             </div>`;
             skills_container.appendChild(col);
@@ -109,7 +109,7 @@ function displaySkills(data) {
                 <div class="progress">
                     <div class="progress-bar" style="width:60%; background: ${data[i].color}">
                         <h3 class="progress-title">${data[i].title}</h3>
-                        <div class="progress-value">${data[i].percentage}%</div>
+                        <div class="progress-value">${data[i].percentage}</div>
                     </div>
                 </div>`;
             skills_container.appendChild(col);
