@@ -56,6 +56,14 @@ function displayPortfolioModal(data) {
                                 </div>
                                 <!-- Portfolio Modal - Image-->
                                 <img class="img-fluid rounded mb-5" src="${item.image}" alt=${item.title}>
+                                <!-- Technology used-->
+                                <div class="col-lg-12 mb-3 d-flex justify-content-center flex-wrap gap-2">
+                                    ${
+                                        item.tech.map(tech => {
+                                            return `<span class="bg-primary text-white rounded-pill px-4 py-1 mb-3">${tech}</span>`;
+                                        }).join('')
+                                    }
+                                </div>
                                 <!-- Portfolio Modal - Text-->
                                 <p class="mb-4 text-start">
                                     ${item.description}
