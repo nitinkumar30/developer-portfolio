@@ -48,10 +48,15 @@ window.addEventListener('DOMContentLoaded', event => {
 
 //show alert on cv download button click
 cv_download_btn.addEventListener('click', () => {
+    showAlert('CV Download', 'CV is not available yet. Please check back later.', 'info');
+});
+
+//show alert function
+function showAlert(title, text, icon) {
     swal({
-        title: "CV Download",
-        text: "CV is'nt ready yet. Please check back later.",
-        icon: "info",
+        title: title,
+        text: text,
+        icon: icon,
         button: "OK",
     });
-});
+}
