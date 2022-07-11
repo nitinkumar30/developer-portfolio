@@ -1,6 +1,6 @@
 const domainName = 'http://abdellatif-laghjaj.ml/projects/';
 
-const PROJECTS_DATA = [
+const PORTFOLIO_DATA = [
     {
         id: 11,
         title: 'Todo List',
