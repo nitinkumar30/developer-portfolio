@@ -48,5 +48,10 @@ window.addEventListener('DOMContentLoaded', event => {
 
 //show alert on cv download button click
 cv_download_btn.addEventListener('click', () => {
-    ohSnap('Succefully created your account');
+    swal({
+        title: "CV Download",
+        text: "CV is'nt ready yet. Please check back later.",
+        icon: "info",
+        button: "OK",
+    });
 });
