@@ -4,32 +4,35 @@ const portfolio_filters = document.querySelectorAll('.portfolio-item-filter');
 
 
 //display portfolio items on page load
-displayPortfolioItems(PORTFOLIO_DATA);
-displayPortfolioModal(PORTFOLIO_DATA);
+document.addEventListener('DOMContentLoaded', () => {
+    displayPortfolioItems(PORTFOLIO_DATA);
+    displayPortfolioModal(PORTFOLIO_DATA);
+});
 
 //display all portfolio items
-function displayPortfolioItems(data){
+function displayPortfolioItems(data) {
     data.forEach(item => {
         portfolio_container.innerHTML += `
         <div class="col-md-6 col-lg-4 mb-5">
-        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target=#portfolioModal${item.id}">
-            <div
-                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                <div class="portfolio-item-caption-content text-center text-white">
-                <i 0class="fas fa-plus fa-3x"></i>
+            <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal${item.id}">
+                <div
+                    class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                    <div class="portfolio-item-caption-content text-center text-white">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
                 </div>
-            </div>
-                <img class="img-fluid" src="${item.image}" alt=${item.title}>
+                    <img class="img-fluid" src="${item.image}" alt=${item.title} style="height: 288.883px; object-fit: cover;">
+                </div>
             </div>
         </div>`;
     });
 }
 
 //display portfolio modal for each item
-function displayPortfolioModal(data){
-    data.forEach(item => {     
+function displayPortfolioModal(data) {
+    data.forEach(item => {
         portfolio_modals_container.innerHTML += `
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal${item.id}" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="portfolioModal${item.id}" tabindex="-1" aria-labelledby="portfolioModal${item.id}" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header border-0">
@@ -42,7 +45,7 @@ function displayPortfolioModal(data){
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <!-- Portfolio Modal - Title-->
-                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                <h2 class="text-secondary text-uppercase mb-0">
                                     ${item.title}
                                 </h2>
                                 <!-- Icon Divider-->
@@ -57,11 +60,11 @@ function displayPortfolioModal(data){
                                 <p class="mb-4 text-start">
                                     ${item.description}
                                 </p>
-                                <button class="btn btn-primary" data-bs-dismiss="modal" onclick="openLink('${item.link}')">
+                                <button class="btn btn-primary" data-bs-dismiss="modal" onclick="openLink('${item.preview}')">
                                     Demo
                                     <i class="fas fa-fw fa-angle-right"></i>
                                 </button>
-                                <button class="btn btn-primary" data-bs-dismiss="modal" onclick="openLink('${item.github}')">
+                                <button class="btn btn-primary" data-bs-dismiss="modal" onclick="openLink('${item.link}')">
                                     Code
                                     <i class="fa-solid fa-code ms-2"></i>
                                 </button>
@@ -76,6 +79,6 @@ function displayPortfolioModal(data){
 }
 
 //open link in new tab
-function openLink(link){
+function openLink(link) {
     window.open(link, '_blank');
 }
