@@ -95,8 +95,8 @@ function displaySkills(data) {
             const col = document.createElement('div');
             col.classList.add('col-md-6');
             col.innerHTML += `
-            <div class="progress">
-                <div class="progress-bar" style="width:60%; background: ${data[i].color}">
+            <div class="progress bg-secondary">
+                <div class="progress-bar" style="width:${data[i].percentage}; background: ${data[i].color}">
                     <h3 class="progress-title">${data[i].title}</h3>
                     <div class="progress-value">${data[i].percentage}</div>
                 </div>
@@ -106,8 +106,8 @@ function displaySkills(data) {
             const col = document.createElement('div');
             col.classList.add('col-md-6');
             col.innerHTML += `
-                <div class="progress">
-                    <div class="progress-bar" style="width:60%; background: ${data[i].color}">
+                <div class="progress bg-secondary">
+                    <div class="progress-bar" style="width:${data[i].percentage}; background: ${data[i].color}">
                         <h3 class="progress-title">${data[i].title}</h3>
                         <div class="progress-value">${data[i].percentage}</div>
                     </div>

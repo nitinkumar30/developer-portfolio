@@ -178,19 +178,19 @@ const SKILLS_DATA = [
     {
         id: 2,
         title: 'CSS',
-        percentage: '95%',
+        percentage: '50%',
         color: '#1D87DC',
     },
     {
         id: 3,
         title: 'JavaScript',
-        percentage: '90%',
+        percentage: '60%',
         color: '#DCA71C',
     },
     {
         id: 4,
         title: 'PHP',
-        percentage: '90%',
+        percentage: '70%',
         color: '#7E10F0',
     },
     {
@@ -202,7 +202,7 @@ const SKILLS_DATA = [
     {
         id: 6,
         title: 'Java',
-        percentage: '80%',
+        percentage: '70%',
         color: '#D62526',
     },
 ];
