@@ -24,6 +24,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- JQuery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/skills.css" rel="stylesheet" />
@@ -132,10 +133,10 @@
             </div>
             <!-- About Section Button-->
             <div class="text-center mt-4 download-cv-btn">
-                <a class="btn btn-xl btn-outline-light" href="#">
+                <button class="btn btn-xl btn-outline-light cv-btn">
                     Download CV
                     <i class="fa-solid fa-bars-progress ms-2"></i>
-                </a>
+                </button>
             </div>
         </div>
     </section>
@@ -326,10 +327,14 @@
     <div class="portfolio-modals-container">
     </div>
 
+    <!-- Oh Snap! Modal-->
+    <div id="ohsnap"></div>
+
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core theme JS-->
+    <script src="js/ohSnap.js"></script>
     <script src="js/data.js"></script>
     <script src="js/display_data.js"></script>
     <script src="js/scripts.js"></script>
