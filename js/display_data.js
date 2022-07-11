@@ -82,3 +82,39 @@ function displayPortfolioModal(data) {
 function openLink(link) {
     window.open(link, '_blank');
 }
+
+//filter portfolio items by category
+portfolio_filters.forEach(filter => {
+    filter.addEventListener('click', () => {
+        portfolio_container.innerHTML = '';
+        portfolio_modals_container.innerHTML = '';
+        const category = filter.getAttribute('data-filter');
+
+        //add active class to selected filter
+        portfolio_filters.forEach(filter => {
+            filter.classList.remove('active');
+        });
+        filter.classList.add('active');
+
+        switch (category) {
+            case '*':
+                displayPortfolioItems(PORTFOLIO_DATA);
+                displayPortfolioModal(PORTFOLIO_DATA);
+                break;
+            case 'web':
+                displayPortfolioItems(PORTFOLIO_DATA.filter(item => item.category === 'web'));
+                displayPortfolioModal(PORTFOLIO_DATA.filter(item => item.category === 'web'));
+                break;
+            case 'mobile':
+                displayPortfolioItems(PORTFOLIO_DATA.filter(item => item.category === 'mobile'));
+                displayPortfolioModal(PORTFOLIO_DATA.filter(item => item.category === 'mobile'));
+                break;
+            case 'desktop':
+                displayPortfolioItems(PORTFOLIO_DATA.filter(item => item.category === 'desktop'));
+                displayPortfolioModal(PORTFOLIO_DATA.filter(item => item.category === 'desktop'));
+                break;
+            default:
+                break;
+        }
+    });
+});
