@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
         type="text/css" />
+    <!-- ScrollReveal JS -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -54,9 +56,9 @@
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-4" src="assets/img/my_image.png" alt="my image" style="width: 160px;" />
+            <img class="masthead-avatar mb-4 my-image" src="assets/img/my_image.png" alt="my image" style="width: 160px;" />
             <!-- Masthead Heading-->
-            <h1 class="text-uppercase mb-0">
+            <h1 class="text-uppercase mb-0 main-header-title">
                 I'm Abdellatif Laghjaj
             </h1>
             <!-- Icon Divider-->
@@ -284,45 +286,6 @@
     <!-- Portfolio Modals-->
 
     <div class="portfolio-modals-container">
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
-                            aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png"
-                                        alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        Demo
-                                        <i class="fas fa-fw fa-angle-right"></i>
-                                    </button>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        Code
-                                        <i class="fa-solid fa-code ms-2"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Bootstrap core JS-->
@@ -332,6 +295,7 @@
     <script src="js/data.js"></script>
     <script src="js/display_data.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 
 </html>
