@@ -1,5 +1,4 @@
-const theme_dropdown = document.getElementById('theme-dropdown');
-
+const theme_elements = document.querySelectorAll('.color-element');
 const themes = [
     {
         bs_primary_rgb: '#007bff',
@@ -28,3 +27,23 @@ const themes = [
     }
 ]
 
+//add active item to selected theme
+theme_elements.forEach(item => {
+    item.addEventListener('click', () => {
+        theme_elements.forEach(item => {
+            item.classList.remove('active');
+        });
+        item.classList.add('active');
+        const theme = item.style.backgroundColor;
+        document.documentElement.style.setProperty('--bs-primary-rgb', theme.substring(theme.indexOf('(') + 1, theme.indexOf(')')));
+        document.documentElement.style.setProperty('--bs-bg-opacity', '0.9');
+        document.documentElement.style.setProperty('--btn-primary', theme);
+    })
+});
+
+
+//function to convert hex to rgb
+function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}` : null;
+}

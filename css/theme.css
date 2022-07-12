@@ -16,4 +16,9 @@
     border: 1px solid #ccc;
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.2s;
+}
+
+.color-themes .color-element.active{
+    outline: 2px solid #fff;
 }
