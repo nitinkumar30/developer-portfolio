@@ -41,7 +41,6 @@ theme_elements.forEach(item => {
         if (item.getAttribute('data-theme') !== 'dark' && item.getAttribute('data-theme') !== 'light') {
             document.documentElement.style.setProperty('--bs-primary-rgb', theme.substring(theme.indexOf('(') + 1, theme.indexOf(')')));
             document.documentElement.style.setProperty('--bs-bg-opacity', '0.9');
-            document.documentElement.style.setProperty('--btn-primary', theme);
         }else if(item.getAttribute('data-theme') === 'dark'){
             isDark = true;
             document.getElementById('skills').classList.add('bg-dark');        
