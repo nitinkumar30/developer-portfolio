@@ -125,8 +125,8 @@ function displaySkills(data) {
 function displayServices(data) {
     data.forEach(item => {
         services_container.innerHTML += `
-        <div class="col-lg-4 col-sm-6 mb-3" role="button" onmouseover="style.transform = 'scale(1.05)'" onmouseout="style.transform = 'scale(1)'" style="transition: all 0.3s ease-in-out;">
-            <div class="card border-0 shadow rounded-4 pt-2 ${item.color} text-white">
+        <div class="col-lg-4 col-sm-6 mb-3" role="button" onmouseover="style.transform = 'scale(1.02)'" onmouseout="style.transform = 'scale(1)'" style="transition: all 0.3s ease-in-out;">
+            <div class="card border-0 shadow rounded-4 pt-2 text-white" style="background: ${item.color}">
                 <div class="card-body d-flex flex-column justify-content-center"
                     onmouseover="style.transform = 'rotate(3deg)'" onmouseout="style.transform = 'rotate(0deg)'" style="transition: all 0.3s ease-in-out;">
                     ${item.image}
