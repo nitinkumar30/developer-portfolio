@@ -35,9 +35,12 @@ theme_elements.forEach(item => {
         });
         item.classList.add('active');
         const theme = item.style.backgroundColor;
-        document.documentElement.style.setProperty('--bs-primary-rgb', theme.substring(theme.indexOf('(') + 1, theme.indexOf(')')));
-        document.documentElement.style.setProperty('--bs-bg-opacity', '0.9');
-        document.documentElement.style.setProperty('--btn-primary', theme);
+        //check if selected theme is not dark and light 
+        if (item.getAttribute('data-theme') !== 'dark' && item.getAttribute('data-theme') !== 'light') {
+            document.documentElement.style.setProperty('--bs-primary-rgb', theme.substring(theme.indexOf('(') + 1, theme.indexOf(')')));
+            document.documentElement.style.setProperty('--bs-bg-opacity', '0.9');
+            document.documentElement.style.setProperty('--btn-primary', theme);
+        }
     })
 });
 
