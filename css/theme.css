@@ -1,0 +1,19 @@
+.color-themes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 0;
+    border-radius: 50px;
+}
+
+.color-themes span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}

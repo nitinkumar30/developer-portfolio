@@ -32,10 +32,10 @@
     <link href="css/preloader.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/skills.css" rel="stylesheet" />
-    <link href="css/theme_dropdown.css" rel="stylesheet" />
+    <link href="css/theme.css" rel="stylesheet" />
 </head>
 
-<body id="page-top" style="overflow-x: hidden; width: 100%;">
+<body id="page-top" style="overflow-x: hidden;">
     <!-- Preloader-->
     <div id="preloader">
         <lottie-player src="assets/raw/preloader.json" background="transparent" speed="1" loop loop autoplay>
@@ -373,23 +373,36 @@
     </div>
 
     <!-- Theme Modal-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            ...
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+    <div class="modal fade" id="theme-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Change Theme</h5>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="color-themes bg-secondary">
+                        <span class="color-element"></span>    
+                        <span class="color-element"></span>    
+                        <span class="color-element"></span>    
+                        <span class="color-element"></span>    
+                        <span class="color-element"></span>    
+                        <span class="color-element"></span>    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        Save changes
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
-  </div>
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -400,6 +413,9 @@
     <script src="js/scripts.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/theming.js"></script>
+    <script>
+        $('#preloader').css('display', 'none');
+    </script>
 </body>
 
 </html>
