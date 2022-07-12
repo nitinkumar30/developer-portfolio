@@ -1,6 +1,4 @@
 #preloader{
-    width: 400px;
-    height: 400px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -10,4 +8,9 @@
     background-color:#fff;
     z-index:9999;
     overflow:hidden;
+}
+
+#preloader lottie-player{
+    width: 280px;
+    height: 280px;
 }
