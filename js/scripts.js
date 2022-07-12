@@ -61,16 +61,12 @@ function showAlert(title, text, icon) {
     });
 }
 
-//toggle the dropdown menu
-$(document).ready(function() {
-  
-    $(".selLabel").click(function () {
-      $('.dropdown').toggleClass('active');
-    });
-    
-    $(".dropdown-list li").click(function() {
-      $('.selLabel').text($(this).text());
-      $('.dropdown').removeClass('active');
-      $('.selected-item p span').text($('.selLabel').text());
-    });
+//preloader
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+        preloader.style.display = 'none';
+        //fade in the content
+        $('body').fadeIn(1000);
+    }, 4000);
 });
