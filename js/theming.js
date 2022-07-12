@@ -89,6 +89,8 @@ function loadTheme(){
         document.documentElement.style.setProperty('--bs-primary-rgb', theme.substring(theme.indexOf('(') + 1, theme.indexOf(')')));
         document.documentElement.style.setProperty('--bs-bg-opacity', '0.9');
     }
+    if(isDark) darkTheme();
+    else lightTheme();
 }
 
 //theme mode
