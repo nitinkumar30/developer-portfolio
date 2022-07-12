@@ -27,6 +27,8 @@ const themes = [
     }
 ]
 
+var  isDark = false;
+
 //add active item to selected theme
 theme_elements.forEach(item => {
     item.addEventListener('click', () => {
@@ -40,13 +42,46 @@ theme_elements.forEach(item => {
             document.documentElement.style.setProperty('--bs-primary-rgb', theme.substring(theme.indexOf('(') + 1, theme.indexOf(')')));
             document.documentElement.style.setProperty('--bs-bg-opacity', '0.9');
             document.documentElement.style.setProperty('--btn-primary', theme);
+        }else if(item.getAttribute('data-theme') === 'dark'){
+            isDark = true;
+            document.getElementById('skills').classList.add('bg-dark');        
+            document.getElementById('services').classList.add('bg-dark');
+            document.getElementById('portfolio').classList.add('bg-dark');
+            document.getElementById('contact').classList.add('bg-dark');
+
+            //change page-section-heading color to white
+            document.querySelectorAll('.page-section-heading').forEach(item => {
+                item.classList.add('text-white');
+            });
+
+            //change divider custom color to white
+            document.querySelectorAll('.divider-custom-line').forEach(item => {
+                item.classList.add('bg-white');
+            });
+
+            document.querySelectorAll('.divider-custom-icon').forEach(item => {
+                item.classList.add('text-white');
+            });
+        }else{
+            isDark = false;
+            document.getElementById('skills').classList.remove('bg-dark');        
+            document.getElementById('services').classList.remove('bg-dark');
+            document.getElementById('portfolio').classList.remove('bg-dark');
+            document.getElementById('contact').classList.remove('bg-dark');
+
+            //change page-section-heading color to black
+            document.querySelectorAll('.page-section-heading').forEach(item => {
+                item.classList.remove('text-white');
+            });
+
+            //change divider custom color to black
+            document.querySelectorAll('.divider-custom-line').forEach(item => {
+                item.classList.remove('bg-white');
+            });
+
+            document.querySelectorAll('.divider-custom-icon').forEach(item => {
+                item.classList.remove('text-white');
+            });
         }
     })
 });
-
-
-//function to convert hex to rgb
-function hexToRgb(hex) {
-    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
-    return result ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}` : null;
-}
