@@ -156,6 +156,17 @@ const PORTFOLIO_DATA = [
         category: 'mobile',
         isPopular: false,
     },
+    {
+        id: 15,
+        title: 'English Dictionary',
+        description: 'Simple English Dictionary that allows you to search for any word in the dictionary with pronunciation and meaning.',
+        image: imagesPath + 'english_dictionary.png',
+        link: 'https://github.com/abdellatif-laghjaj/dicionary-web-app',
+        preview: domainName + 'dicionary/',
+        tech: ['HTML', 'CSS', 'JS', 'VueJS', 'TailwindCSS'],
+        category: 'web',
+        isPopular: true,
+    }
 ];
 
 
