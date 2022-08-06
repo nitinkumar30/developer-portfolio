@@ -162,7 +162,7 @@ const PORTFOLIO_DATA = [
         description: 'Simple English Dictionary that allows you to search for any word in the dictionary with pronunciation and meaning.',
         image: imagesPath + 'english_dictionary.png',
         link: 'https://github.com/abdellatif-laghjaj/dicionary-web-app',
-        preview: domainName + 'dicionary/',
+        preview: domainName + 'dictionary/',
         tech: ['HTML', 'CSS', 'JS', 'VueJS', 'TailwindCSS'],
         category: 'web',
         isPopular: true,
