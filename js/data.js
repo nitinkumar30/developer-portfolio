@@ -204,21 +204,33 @@ const SKILLS_DATA = [
     },
     {
         id: 4,
+        title: 'Vue Js',
+        percentage: '50%',
+        color: '#3FB27F',
+    },
+    {
+        id: 5,
         title: 'PHP',
         percentage: '70%',
         color: '#7E10F0',
     },
     {
-        id: 5,
+        id: 6,
         title: 'MySQL',
         percentage: '90%',
         color: '#005C83',
     },
     {
-        id: 6,
+        id: 7,
+        title: 'Laravel',
+        percentage: '60%',
+        color: '#F7291B',
+    },
+    {
+        id: 8,
         title: 'Java',
         percentage: '70%',
-        color: '#D62526',
+        color: '#F09112',
     },
 ];
 
