@@ -68,5 +68,5 @@ window.addEventListener('load', () => {
         preloader.style.display = 'none';
         //fade in the content
         $('body').fadeIn(1000);
-    }, 4000);
+    }, 3000);
 });
