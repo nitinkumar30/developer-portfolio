@@ -43,7 +43,7 @@ ScrollReveal().reveal('.about-text-1', {
 
 ScrollReveal().reveal('.about-text-2', {
     duration: 1300,
-    origin: "right",
+    origin: "left",
     distance: "300px",
     delay: 300,
     easing: "ease-in-out",
